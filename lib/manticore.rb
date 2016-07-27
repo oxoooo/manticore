@@ -44,6 +44,7 @@ module Manticore
   require_relative "./manticore/java_extensions"
   require_relative './manticore/client/proxies'
   require_relative './manticore/client'
+  require_relative './manticore/status'
   require_relative './manticore/response'
   require_relative './manticore/stubbed_response'
   require_relative './manticore/cookie'

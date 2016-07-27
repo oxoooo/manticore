@@ -233,6 +233,14 @@ module Manticore
       @context.get_attribute("retryCount") || 0
     end
 
+    def status
+      @status ||= Status.new(code)
+    end
+
+    def json
+      @json ||= JSON.parse(body)
+    end
+
     private
 
     def background!
